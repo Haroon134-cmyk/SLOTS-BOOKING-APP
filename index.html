@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Time Slots Booking App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <div class="container">
+            <div class="row" id = "slots">
+                <div class="col-md-3">
+                    <div class="b d-flex justify-content-around align-self-center">
+                        <h3>12:15 to 12:30</h3>
+                    <button class="btn btn-primary">Book</button>
+                    </div>
+                </div>
+            </div>
+    
+
+        </div>
+        <div class="overlay" id = "overlay">
+            <div class="modals">
+                <div class="cross-line">
+                    <i class="fa-solid fa-circle-xmark" onclick = "disnone()"></i>
+                </div>
+                <form class = 'text-center'>
+                    <div class="form-group mb-2">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Name">
+                        <small id="nameHelp" class="form-text text-muted d-none">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group mb-2">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted d-none">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group mb-2">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Enter Phone">
+                        <small id="phoneHelp" class="form-text text-muted d-none">We'll never share your email with anyone else.</small>
+                      </div>
+                      <button class = "btn btn-success mb-2" onclick="formSubmit()" >Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    
+        
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
